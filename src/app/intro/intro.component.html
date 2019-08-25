@@ -1,0 +1,22 @@
+<h3>Intro</h3>
+<p class="delta-haut">[value]="saisie"</p>
+<input
+    type="text"
+    [value]="saisie"
+    class="form-control"
+>
+<p class="delta-haut">(input)="onInput($event)"</p>
+<input
+    type="text"
+    value="some initial value"
+    class="form-control"
+    (input)="onInput($event)"
+>
+<p class="delta-haut">les deux...</p>
+<input
+    type="text"
+    value="some initial value"
+    class="form-control"
+    [value]="saisie"
+    (input)="onInput($event)"
+>

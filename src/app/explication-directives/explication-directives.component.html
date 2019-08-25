@@ -1,0 +1,50 @@
+<p class="delta-haut">
+  ModelV1Directive
+</p>
+<input
+  type="text"
+  class="form-control"
+  appModelV1
+  [appModelV1Input]="saisie"
+  (appModelV1Output)="saisie = $event"
+/>
+<p class="delta-haut">
+  ModelV2Directive
+</p>
+<!--
+    appModelV2
+    [appModelV2]="saisie"
+    (appModelV2Change)="saisie = $event"
+-->
+<input type="text" class="form-control" [(appModelV2)]="saisie" />
+
+<p class="delta-haut">
+  ModelV3Directive
+</p>
+<input type="text" class="form-control" [(appModelV3)]="saisie" />
+
+<!--
+@Input('ngModel')
+model: any
+
+@Output('ngModelChange')
+update: EventEmitter
+-->
+<p class="delta-haut">directive ngModel v1</p>
+<input
+  type="text"
+  value="some initial value"
+  class="form-control"
+  ngModel
+  [ngModel]="saisie"
+  (ngModelChange)="saisie = $event"
+/>
+<p class="delta-haut">
+  directive ngModel v2
+</p>
+<input
+  type="text"
+  value="some initial value"
+  class="form-control"
+  [(ngModel)]="saisie"
+/>
