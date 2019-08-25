@@ -1,8 +1,16 @@
 # NgBinding
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+## introduction au binding
+
+https://github.com/avergnaud/knockoutjs-like-binding
+
+## formulaires en angular
+
+https://github.com/avergnaud/meetup-aout-2019
 
 ## Development server
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
